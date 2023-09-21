@@ -30,6 +30,9 @@ COV.start()
 
 @cli.command()
 def create_db():
+    """
+    Это какая-то команда для работы с базой данных
+    """
     db.drop_all()
     db.create_all()
     db.session.commit()
